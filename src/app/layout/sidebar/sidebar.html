@@ -1,0 +1,42 @@
+<section class="section-slide">
+	<div class="wrap-slick1">
+		<ngx-slick-carousel class="slick1" [config]="slideConfig" (init)="slickInit($event)"
+			(afterChange)="afterChange($event)">
+			<div ngxSlickItem *ngFor="let s of slides; let i = index">
+				<div class="item-slick1" [style.background-image]="'url(' + s.img + ')'">
+					<div class="container h-full">
+						<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
+							<div class="layer-slick1" [attr.data-appear]="s.appear1" [ngClass]="[
+       s.active ? 'animate__animated' : '',
+       s.active ? 'animate__' + s.appear1 : '',
+       s.active ? 'visible-true' : 'visible-false'
+     ]" data-delay="0">
+								<span class="ltext-101 cl2 respon2">{{ s.title }}</span>
+							</div>
+
+							<div class="layer-slick1  " [ngClass]="[
+								s.active ? 'animate__animated' : '',
+								s.active ? 'animate__' + s.appear2 : '',
+								s.active ? 'visible-true' : 'visible-false'
+								]" [attr.data-appear]="s.appear2" data-delay="800">
+								<h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">{{ s.subtitle }}</h2>
+							</div>
+
+							<div class="layer-slick1 visible-false  " [ngClass]="[
+		s.active ? 'animate__animated' : '',
+		s.active ? 'animate__' + s.appear3 : '',
+		s.active ? 'visible-true' : 'visible-false'
+     ]" [attr.data-appear]="s.appear3" data-delay="1600">
+								<a href="product.html"
+									class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
+									Shop Now
+								</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</ngx-slick-carousel>
+	</div>
+</section>

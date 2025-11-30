@@ -2,7 +2,8 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "cli": {
-    "packageManager": "npm"
+    "packageManager": "npm",
+    "analytics": "e399d151-2962-4e54-ab2e-676b6c50d8e9"
   },
   "newProjectRoot": "projects",
   "projects": {
@@ -22,10 +23,28 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets",
+                "output": "/assets/"
               }
             ],
             "styles": [
+              "node_modules/animsition/dist/css/animsition.min.css",
+              "node_modules/animate.css/animate.min.css",
+              "node_modules/material-design-iconic-font/dist/css/material-design-iconic-font.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/slick-carousel/slick/slick.css",
+              "node_modules/slick-carousel/slick/slick-theme.css",
               "src/styles.css"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/animsition/dist/js/animsition.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/slick-carousel/slick/slick.min.js"
             ],
             "server": "src/main.server.ts",
             "outputMode": "server",
