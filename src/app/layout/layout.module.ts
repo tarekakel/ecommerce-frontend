@@ -5,8 +5,9 @@ import { Header } from './header/header';
 import { Footer } from './footer/footer';
 import { Sidebar } from './sidebar/sidebar';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Banner } from './banner/banner';
+import { ShoppingCartSideBar } from '../pages/shopping-cart-side-bar/shopping-cart-side-bar';
 
 
 @NgModule({
@@ -14,20 +15,24 @@ import { Banner } from './banner/banner';
     Header,
     Sidebar,
     Footer,
-    Banner
+    Banner,
+    ShoppingCartSideBar
   ],
   imports: [
     CommonModule,
     RouterModule,
     SlickCarouselModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
+    
   ],
   exports: [
     Header,
     Sidebar,
     Footer,
     Banner,
-    SlickCarouselModule
+    SlickCarouselModule,
+    ShoppingCartSideBar
   ]
 })
 export class LayoutModule { }

@@ -41,6 +41,7 @@
     "isotope-layout": "^3.0.6",
     "jquery": "^3.7.1",
     "material-design-iconic-font": "^2.2.0",
+    "ng-animate": "^2.0.1",
     "ngx-slick-carousel": "^20.0.0",
     "rxjs": "~7.8.0",
     "slick-carousel": "^1.8.1",

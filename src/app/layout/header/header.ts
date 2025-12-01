@@ -17,4 +17,16 @@ export class Header {
     this.showSearchModal = false;
   }
 
+  showCart = false;
+
+  openCart() {
+    console.log('opened');
+    
+    this.showCart = true;
+  }
+
+  closeCart() {
+    this.showCart = false;
+  }
+
 }
