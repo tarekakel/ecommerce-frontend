@@ -1,8 +1,11 @@
 <app-header></app-header>
 
 <div class="layout">
+  @if (isHome()) {
   <app-sidebar></app-sidebar>
   <app-banner></app-banner>
+  }
+
 
   <main class="content">
     <router-outlet></router-outlet>
@@ -10,7 +13,7 @@
 </div>
 
 
- 
+
 <app-footer></app-footer>
 
 <!-- Back to top -->

@@ -1,0 +1,153 @@
+.how-itemcart1 {
+    width: 60px;
+    position: relative;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.how-itemcart1 img {
+    width: 100%;
+    display: block;
+}
+
+/* remove the old ::after completely */
+.how-itemcart1::after {
+    display: none !important;
+}
+
+/* show ZMDI icon */
+.close-icon {
+    position: absolute;
+    inset: 0;
+    /* shorthand for top:0; right:0; bottom:0; left:0 */
+    background: rgba(0, 0, 0, 0.5);
+
+    color: #fff;
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.how-itemcart1:hover .close-icon {
+    opacity: 1;
+}
+
+.btn-num-product-up,
+.btn-num-product-down {
+    width: 45px;
+    height: 100%;
+    cursor: pointer;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Table Shopping Cart ]*/
+
+.wrap-table-shopping-cart {
+    overflow: auto;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+}
+
+.table-shopping-cart {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 680px;
+}
+
+.table-shopping-cart tr {
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.table-shopping-cart .column-1 {
+    width: 133px;
+    padding-left: 50px;
+}
+
+.table-shopping-cart .column-2 {
+    width: 220px;
+    font-size: 15px;
+}
+
+.table-shopping-cart .column-3 {
+    width: 120px;
+    font-size: 16px;
+}
+
+.table-shopping-cart .column-4 {
+    width: 145px;
+    text-align: right;
+}
+
+.table-shopping-cart .column-5 {
+    width: 172px;
+    padding-right: 50px;
+    text-align: right;
+    font-size: 16px;
+}
+
+.table-shopping-cart .table_row {
+    height: 185px;
+}
+
+.table-shopping-cart .table_row td {
+    padding-bottom: 20px;
+}
+
+.table-shopping-cart .table_row td.column-1 {
+    padding-bottom: 30px;
+}
+
+.table-shopping-cart .table_head th {
+    font-family: Poppins-Bold;
+    font-size: 13px;
+    color: #555;
+    text-transform: uppercase;
+    line-height: 1.6;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.table-shopping-cart td {
+    font-family: Poppins-Regular;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ Num Product ]*/
+.wrap-num-product {
+    width: 140px;
+    height: 45px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+
+.num-product {
+    width: calc(100% - 90px);
+    height: 100%;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    background-color: #f7f7f7;
+}
+
+input.num-product {
+    -moz-appearance: textfield;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+input.num-product::-webkit-outer-spin-button,
+input.num-product::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
