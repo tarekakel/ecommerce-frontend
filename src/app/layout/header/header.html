@@ -1,7 +1,7 @@
 <!-- Header -->
 <header>
   <!-- Header desktop -->
-  <div class="container-menu-desktop">
+  <div class="container-menu-desktop" [class.fix-menu-desktop]="isFixed">
     <!-- Topbar -->
     <div class="top-bar">
       <div class="content-topbar flex-sb-m h-full container">
@@ -29,7 +29,7 @@
       </div>
     </div>
 
-    <div class="wrap-menu-desktop">
+    <div class="wrap-menu-desktop"  [class.top-zero]="isFixed">
       <nav class="limiter-menu-desktop container">
 
         <!-- Logo desktop -->
@@ -58,7 +58,7 @@
             </li>
 
             <li>
-              <a href="blog.html">Blog</a>
+              <a  routerLink="/blog" >Blog</a>
             </li>
 
             <li>
@@ -174,7 +174,7 @@
       </li>
 
       <li>
-        <a>Blog</a>
+        <a routerLink="/blog">Blog</a>
       </li>
 
       <li>

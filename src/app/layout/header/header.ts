@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -9,6 +9,14 @@ import { Component } from '@angular/core';
 export class Header {
   showSearchModal = false;
 
+
+   isFixed = false;
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.isFixed = window.scrollY > 30;   // you can change threshold
+  }
+  
   openSearchModal() {
     this.showSearchModal = true;
   }
