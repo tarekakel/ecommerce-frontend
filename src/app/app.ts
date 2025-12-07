@@ -5,9 +5,6 @@ import { LayoutModule } from './layout/layout.module';
 import { SharedModule } from './shared/shared.module';
  
 import { Loader } from "./shared/components/loader/loader";
-declare var $: any;
-
-
 @Component({
   selector: 'app-root',
 
